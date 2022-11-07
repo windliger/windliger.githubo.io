@@ -1,0 +1,650 @@
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section{
+    position: relative;
+    padding: 40px;
+}
+
+nav{
+    padding: 0 100px;
+    width: 94%;
+    height: 45px;
+    box-sizing:border-box;
+    background:rgba(51, 152, 235, 0.6);
+    box-shadow:0 5px 15px rgba(0, 0, 0,.3);
+    transition: .5s;
+    border-radius: 9px;
+    z-index: 1000000;
+    position:fixed;
+    top: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navigation{
+    display: block;
+    position:relative;
+    margin:0;
+    padding:0;
+    display: flex;
+    transition: .5s;
+    left: 800px;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+.navigation li a{
+    display:block;
+    padding: 5px 25px;
+    margin-top: -40px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.navigation li a h3{
+    font-size: 1.6em;
+}
+
+.navigation li a:hover{
+    background-color:#f09393;
+    color: #8ed3ee;
+    border-radius: 10px;
+}
+
+.header, .banner{
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo_principal{
+    font-size: 2.2em;
+}
+
+.header .logo , .logo_principal{
+    color:#0e0901;
+}
+
+.toggle{
+    display: none;
+    position: absolute;
+    right: 40px;
+    background-color: #F9C4C4;
+    border-radius: 5px;
+}
+
+.header .toggle img{
+    max-width: 35px;
+    cursor: pointer;
+}
+
+.banner{
+    position: relative;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#87ebeb,transparent);
+}
+
+.banner .content{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner .content a{
+    font-family: 'Raleway', sans-serif;
+    display: block;
+}
+
+.banner .content h1{
+    background-color: none;
+    color: #e77a14;
+    font-size: 10em;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.banner .content h1:hover{
+    background:rgba(142, 181, 231, 0.7);
+    color: #F9C4C4;
+}
+
+.banner .content h2{
+    color: #fff;
+    font-size: 4em;
+}
+
+.banner .content p{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.fitBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+[class^="img"]{
+    position: absolute;
+}
+
+/*sonbrero*/
+.img1{
+    margin-top: -10vh;
+    margin-left: -10vh;
+}
+
+/*chamarra rosa nike*/
+.img2{
+    margin-top: 10vh;
+    margin-left: 10vh;
+}
+
+/*cardigan marron*/
+.img3{
+    margin-top: -1vh;
+    margin-left: 10vh;
+}
+
+/*vestido flores*/
+.img4{
+    margin-top: 50vh;
+    margin-left: 30vh;
+}
+
+/*torera moztaza*/
+.img6{
+    margin-top: 3vh;
+    margin-left: 50vh;
+}
+
+/*tacos rosas*/
+.img7{
+    margin-left: 55vh;
+    margin-top: 70vh;
+}
+
+/*vestido rojo*/
+.img8{
+    margin-left: 130vh;
+    margin-top: 3vh;
+}
+
+/*tennis rosas*/
+.img9{
+    margin-right: 50vh;
+    margin-top: 70vh;
+}
+
+/*chompa guinda*/
+.img10{
+    margin-left: 140vh;
+    margin-top: 40vh;
+}
+
+.button{
+    text-decoration: none;
+    color: #20002c;
+    background-color: #F9C4C4;
+    padding: 7px 1px 9px;
+    border: 1px solid #20002c;
+    border-radius: 5px;
+    width: 250px;
+    margin: auto;
+}
+
+.beauty{
+    font-family: 'Dancing Script', cursive;
+}
+
+.products{
+    margin-top: 20px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    background: #93d6f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9C4C4, #87a9f1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9C4C4, #84b5ec); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.products .products-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products .products-list .box{
+    position: relative;
+    min-width: 350px;    
+    height: 200px;
+    background: #20002c;
+    transition: 0.5s;
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+.products h2{
+    font-size: 100px;
+    color: #20002c;
+}
+
+.products h4{
+    font-size: 20px;
+    color: #0c0606;
+    margin-bottom: 10px;
+}
+
+.products a{
+    display: block;
+    margin: auto;
+    width: 250px;
+}
+
+.products .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.products .content .card{
+    position: relative;
+    max-width: 320px;
+    height: 220px;
+    border: 2px solid #7c0f0f;
+    border-radius: 5px;
+    margin: 45px 17px;
+    padding: 25px 7px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s ease-in-out;
+    background:rgba(240, 126, 51, 0.7);
+}
+
+.products .content .card:hover{
+    height: 650px;
+    border: 7px solid #df7070;
+    background-color: #417383;
+    border-radius: 5px;
+}
+
+.products .content .card .imgBx{
+    position: relative;
+    width: 250px;
+    height: 260px;
+    top: -60px;
+    margin: auto;
+    z-index: 1;
+}
+
+.products .content .card .imgBx img{
+    max-width: 90%;
+    border-radius: 4px;
+}
+
+.products .content .card .contentcard a{
+    margin: auto;
+}
+.products .content .card .button{
+    text-decoration: none;
+    color: #4191ec;
+    background-color: #F9C4C4;
+    padding: 7px 20px 9px;
+    border: 1px solid #39baec;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.products .content .card .contentcard{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.products .content .card .contentcard h3{
+    font-size: 25px;
+    color: #2215d8;
+    background:rgba(165, 232, 236, 0.7);
+    border-radius: 7px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
+}
+
+.products .content .card .contentcard p{
+    margin-bottom: 15px;
+}
+
+.products .content .card:hover .contentcard{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.products .content .card:hover .imgBx img{
+    max-width: 100%;
+    margin-top: -40px;
+}
+
+.products .content .card:hover a{
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #01283b;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer .sci{
+    position: relative;
+    display: flex;
+}
+
+.footer .sci li{
+    list-style: none;
+}
+
+.footer .sci li a{
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.footer .sci li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+
+.copyrightText{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color:#fff;
+    text-align: center;
+}
+
+.copyrightText a{
+    text-decoration: none;
+    color: #219ed8;
+}
+
+/*boton de whatsapp*/
+.appWhatsapp{
+    position: fixed;
+    right: 80px;
+    bottom: 15px;
+    width : 10px;
+    z-index : 1000;
+}
+
+/* responsive */
+@media(max-width: 769px){
+    
+    section {
+        padding: 30px;
+    }
+
+    .banner .content h1 {
+        font-size: 3.5em;
+    }
+
+    .banner .content p {
+        font-size: 1em;
+    }
+
+    .banner .content a{
+        display: block;
+    }
+
+    .button{
+        display: block;
+    }
+
+    .products h2 {
+        font-size: 2.1em;
+        padding: 0;
+    }
+    
+    .products h4 {
+        display: block;
+    }
+    
+    .products a {
+        font-size: 1em;
+        width: 150px;
+    }
+
+    .footer .sci li a img {
+        filter: invert(1);
+        max-width: 30px;
+    }
+    
+    .header .logo {
+        font-size: 1em;
+    }
+
+    .appWhatsapp{
+        position: fixed;
+        right: 60px;
+        bottom: 15px;
+        width : 3px;
+        z-index : 1000;
+    }
+
+    .appWhatsapp img{
+        width: 45px;
+    }
+
+    /*Ocultamos las prendas*/
+    .img2 ,.img3,.img4,.img5,.img6,.img7,.img8,.img9,.img10{
+        display: none;
+    }
+    .img1{
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+
+}
+
+@media(max-width: 1025px){
+    .banner .content a{
+        display: block;
+    }
+
+    .button{
+        display: block;
+    }
+    .img2 ,.img3,.img4,.img5,.img6,.img7,.img8,.img9,.img10{
+        display: none;
+    }
+    .img1{
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+
+
+    nav{
+        padding: 0 10px;
+        width: 89%;
+        height: 35px;
+        left: 20px;
+    }    
+
+    .navigation{
+        width:100%;
+        top: 5px;
+        left: 1px;
+        display: none;
+    }
+
+    .navigation.active{
+        display: block;
+    }
+
+    .navigation li a{
+        margin: 0;
+        display: block;
+        text-align: center;
+        background-color: rgba(63, 166, 184, 0.568);
+        border-radius: 7px;
+        border: 1px solid #60b2e2;
+    }
+    
+    .navigation li a h3{
+        font-size: 20px;
+        color: #0897eb;
+    }
+
+    .logo_principal{
+        font-size: 1.75em ;
+    }
+    
+
+    .toggle{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 0.05px;
+        bottom: 0px;
+    }
+
+    .header .toggle img{
+        max-width: 30px;
+        margin-top: 3px;
+    }
+    
+}
+:root {
+    font-family: 'Ubuntu', sans-serif;
+    --font-color: rgb(218, 218, 218);
+}
+
+main{
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: rgba(250,250,255,0.5);
+}
+
+.formularios {
+    font-size: 1.2em;
+    border-radius: 40px;
+    line-height: 1.2em;
+    padding: 5%;
+    width: 30vw;
+    height: auto;
+    background: linear-gradient(to right, #0077B6, #0077B6); 
+    margin-left: -50px;
+}
+
+.formularios .dados {
+    display: inline-block;
+    width: 30px;
+}
+
+
+input {
+    padding: 5px;
+    font-size: .6em;
+    height: 30px;
+    background: #E9F1F7;
+    border: hidden;
+    border-radius: 3px;  
+    transition: all ease 0.4s;
+}
+
+input:focus {
+    outline: none;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(250,250,222,0.5);
+}
+
+.endereco form {
+    margin-top: 30px;
+    display: inline-block;
+    width: 30px;
+}
+
+#ibge {
+    display: none;
+}
+
+.botao {
+    font-size: .5em;
+    font-family: 'Ubunto', sans-serif;
+    background-color: #48CAE4;
+    border-radius: 3px;
+    border:none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 250px;
+    height: auto;
+    transition: all ease 0.4s;
+}
+
+.botao:hover {
+    background-color: #FCA311;
+}
+
+
